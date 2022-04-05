@@ -1,0 +1,43 @@
+h1{
+     font-size: 50px; 
+     text-align: center; 
+} 
+.textcenter{
+     text-align:center; 
+} 
+.content{
+     padding:50px; 
+} 
+.ngClassPresentation{
+     background-color: rgb(0, 0, 0);
+     color:white; 
+} 
+.center{
+    display: block;
+    margin-left:auto; 
+    margin-right:auto; 
+} 
+.border{ 
+    border: 1px solid black 
+} 
+.top{ 
+    height: 80px; 
+    background-color: rgb(17, 0, 63);
+    box-shadow:5px 5px 25px 5px rgb(124 124 124); 
+} 
+#buttons{ 
+    float: right; 
+    padding-top: 20px; 
+    padding-right: 20px; 
+    align-content: flex-end; 
+} 
+#Next{ 
+    margin-left: 10px;
+}
+#logo{
+    float: left;
+}
+#logo2{
+    width: 65%;
+    padding: 20px;
+}

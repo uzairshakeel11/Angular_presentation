@@ -1,0 +1,24 @@
+<div class="top">
+    <div id="logo">
+        <img id="logo2" src="../assets/image/angularlogo.png"/>
+    </div>
+    <div id="buttons"> 
+        <button id="Previous" [disabled]="disablePreviousButton" class="btn btn-light" (click)="onPreviousButtonPress()"> Previous </button> 
+        <button id="Next" [disabled]="disableNextButton" class="btn btn-light" (click)="onNextButtonPress()"> Next 
+        </button> 
+    </div> 
+</div> 
+<div class="content"> 
+    <h1>{{content.heading}}</h1> 
+    <p [innerHTML]="content.text"></p> 
+    <h4 *ngIf="style" [ngStyle]="{'color':content.instructions}">
+        You can change styleExp in the TypeScript file.
+    </h4> 
+    <h4 *ngIf="class" [ngClass]="content.instructions">
+        You can change first and second in the CSS file.
+    </h4> 
+    <div *ngIf="for"> 
+        <h4 *ngFor="let heading of Angularcontent">{{heading.heading}}   
+        </h4> 
+    </div> 
+</div>
